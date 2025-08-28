@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_flutter/widgets/header_main.dart';
 // import 'package:portfolio_flutter/constants/font_size.dart';
 import 'package:portfolio_flutter/widgets/navbar.dart';
 
@@ -15,10 +16,17 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      endDrawer: Drawer(key: _scaffoldKey),
-      body: Container(
-        padding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
-        child: Column(children: [NavBar(scaffoldKey: _scaffoldKey)]),
+      endDrawer: Drawer(key: _scaffoldKey, backgroundColor: Colors.amber),
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+          child: Column(
+            children: [
+              NavBar(scaffoldKey: _scaffoldKey),
+              HeaderMain(),
+            ],
+          ),
+        ),
       ),
     );
   }
