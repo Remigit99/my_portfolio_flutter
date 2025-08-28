@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_flutter/widgets/about.dart';
+import 'package:portfolio_flutter/widgets/contact.dart';
 import 'package:portfolio_flutter/widgets/header_main.dart';
 // import 'package:portfolio_flutter/constants/font_size.dart';
 import 'package:portfolio_flutter/widgets/navbar.dart';
@@ -27,7 +28,8 @@ class _HomeScreenState extends State<HomeScreen> {
               NavBar(scaffoldKey: _scaffoldKey),
               // HeaderMain(),
               // AboutSection(),
-              ProjectsSection(),
+              // ProjectsSection(),
+              ContactSection(),
             ],
           ),
         ),
