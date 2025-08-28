@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_flutter/widgets/about.dart';
 import 'package:portfolio_flutter/widgets/header_main.dart';
 // import 'package:portfolio_flutter/constants/font_size.dart';
 import 'package:portfolio_flutter/widgets/navbar.dart';
+import 'package:portfolio_flutter/widgets/projects.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -23,7 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             children: [
               NavBar(scaffoldKey: _scaffoldKey),
-              HeaderMain(),
+              // HeaderMain(),
+              // AboutSection(),
+              ProjectsSection(),
             ],
           ),
         ),
