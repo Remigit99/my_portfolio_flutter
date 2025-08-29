@@ -8,7 +8,7 @@ class HeaderMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(40),
+      padding: Responsive.pagePadding(context),
       child: Responsive.isMobile(context)
           ? Column(
               crossAxisAlignment: CrossAxisAlignment.center,

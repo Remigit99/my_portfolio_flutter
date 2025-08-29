@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_flutter/constants/colors.dart';
+import 'package:portfolio_flutter/constants/responsive.dart';
 
 class AboutSection extends StatelessWidget {
   const AboutSection({super.key});
@@ -7,7 +8,8 @@ class AboutSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(40),
+      padding: Responsive.pagePadding(context),
+
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -26,9 +28,9 @@ class AboutSection extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-              _StatItem("120+", "Completed Projects"),
+              _StatItem("13+", "Completed Projects"),
               _StatItem("95%", "Client satisfaction"),
-              _StatItem("10+", "Years of experience"),
+              _StatItem("3+", "Years of experience"),
             ],
           ),
         ],
